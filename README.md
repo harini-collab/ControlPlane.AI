@@ -24,7 +24,7 @@ User Request
      ↓
 ControlPlane
      ↓
-Gemini AI
+Gemini AI/Any chatbot
      ↓
 Risk Evaluation
      ↓
