@@ -41,7 +41,7 @@ The AI generates a response, but **ControlPlane makes the final governance decis
 
 # 2. Governance Decisions
 
-## 🟢 ALLOW
+##  ALLOW
 
 Used when the request is safe and does not violate any configured policy.
 
@@ -59,7 +59,7 @@ The response is delivered normally.
 
 ---
 
-## 🔵 MODIFY
+##  MODIFY
 
 Used when the request is useful but the response or execution needs to be changed to reduce risk.
 
@@ -79,7 +79,7 @@ Used when the request is useful but the response or execution needs to be change
 
 The unnecessary address information is generalized instead of blocking the entire interaction.
 
-## 🟡 ESCALATE — HUMAN REVIEW
+## ESCALATE — HUMAN REVIEW
 
 Used when AI should not make the final decision or when an important claim cannot be sufficiently verified.
 
@@ -95,7 +95,7 @@ Used when AI should not make the final decision or when an important claim canno
 
 The situation is potentially high impact and requires appropriate human handling.
 
-## 🔴 BLOCK
+##  BLOCK
 
 Used when a request or response violates a hard security, privacy, safety, or policy rule.
 
