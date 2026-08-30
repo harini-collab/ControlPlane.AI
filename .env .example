@@ -1,6 +1,6 @@
 #Add your own key
 LLM_PROVIDER=gemini
-GEMINI_API_KEY=enter your key here
+GEMINI_API_KEY=
 LLM_MODEL=gemini-3.6-flash
 
 # For a no-key demo, set this to true:
