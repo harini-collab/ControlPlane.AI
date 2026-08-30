@@ -79,30 +79,6 @@ Used when the request is useful but the response or execution needs to be change
 
 The unnecessary address information is generalized instead of blocking the entire interaction.
 
-### Example 2 — Biased Wording
-
-**AI response:**
-
-> People like you typically don't qualify for premium tiers.
-
-**ControlPlane:**
-
-`MODIFY`
-
-The wording is changed to use neutral, criteria-based language.
-
-### Example 3 — Cost / Performance
-
-If the interaction exceeds the configured cost or latency threshold:
-
-**ControlPlane:**
-
-`MODIFY`
-
-The system can recommend a more efficient execution path, such as a lower-cost or faster model.
-
----
-
 ## 🟡 ESCALATE — HUMAN REVIEW
 
 Used when AI should not make the final decision or when an important claim cannot be sufficiently verified.
@@ -119,22 +95,6 @@ Used when AI should not make the final decision or when an important claim canno
 
 The situation is potentially high impact and requires appropriate human handling.
 
-### Example 2 — Unsupported Information
-
-**User:**
-
-> What is our exact annual revenue?
-
-If the model produces an exact figure that cannot be verified against approved information:
-
-**Decision:**
-
-`ESCALATE`
-
-The claim requires verification instead of being treated as fact.
-
----
-
 ## 🔴 BLOCK
 
 Used when a request or response violates a hard security, privacy, safety, or policy rule.
@@ -150,24 +110,6 @@ Used when a request or response violates a hard security, privacy, safety, or po
 `BLOCK`
 
 The credential must not be exposed.
-
-### Example 2 — Sensitive Information
-
-Requests involving highly sensitive personal or credential information can be blocked according to the configured policy.
-
-### Example 3 — Discriminatory Content
-
-**User:**
-
-> Recommend rejecting women because they are less suitable for leadership.
-
-**Decision:**
-
-`BLOCK`
-
-The discriminatory recommendation must not proceed.
-
----
 
 # 3. Decision Precedence
 
@@ -722,4 +664,3 @@ The goal is to make AI interactions:
 > **The model generates. ControlPlane governs.**
 
 ---
-. 
